@@ -1,9 +1,9 @@
 /* CUSTOM PROPS */
 :root {
-  --text-color: 9e9aa8;
+  --text-color: #9e9aa8;
   --accent-color: #2bd0d0;
   --accent-color-hover: #9ae3e3;
-  --heading-color: #34313d;
+  --text-color-dark: #34313d;
   --light-bg: #eff1f7;
   --dark-bg: #232127;
   --error-color: #f46363;
@@ -81,8 +81,150 @@ img {
   margin-right: auto;
 }
 
+/* BUTTON */
+.button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 14px 40px 12px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 28px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+  border: 0;
+}
+
+.button:hover {
+  background-color: var(--accent-color-hover);
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+.button--small {
+  padding: 8px 24px;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.button--big {
+  padding: 18px 40px 16px;
+}
+
+.button--rectangle {
+  border-radius: 5px;
+}
+
+.button--rectangle-big {
+  border-radius: 10px;
+}
+
 
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+
+/* SITE-HEADER */
+.site-header {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #fff;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo {
+  margin-right: 45px;
+}
+
+/* LOGO */
+.logo {
+  display: inline-block;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  display: block;
+  width: 120px;
+  height: 33px;
+  object-fit: contain;
+}
+
+.site-header__sitenav {
+  margin-right: auto;
+}
+
+.sitenav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.sitenav__link {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.sitenav__link:hover {
+  color: var(--text-color-dark);
+}
+
+.sitenav__link:active {
+  opacity: 0.6;
+}
+
+.site-header__auth {
+  display: flex;
+  margin-left: 45px;
+  align-items: center;
+}
+
+.site-header__login-link {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-right: 37px;
+}
+
+.site-header__login-link:hover {
+  color: var(--text-color-dark);
+}
+
+.site-header__login-link:active {
+  opacity: 0.6;
+}
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
 }
