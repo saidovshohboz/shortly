@@ -93,7 +93,7 @@ img {
   border-radius: 28px;
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: normal;
   border: 0;
 }
 
@@ -217,6 +217,37 @@ img {
   opacity: 0.6;
 }
 
+
+/* HERO */
+.hero {
+  padding-top: 140px;
+  padding-bottom: 222px;
+  background-image: url("../img/working-with-computer.svg");
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 480px) top 72px;
+}
+
+.hero__inner {
+  max-width: 565px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: var(--text-color-dark);
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -2px;
+}
+
+.hero-text {
+  margin-top: 0;
+  margin-bottom: 38px;
+  color: var(--text-color);
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
 
 
 @media
