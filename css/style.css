@@ -400,6 +400,10 @@ select:-webkit-autofill:focus {
   min-width: 103px;
 }
 
+.url-shortener__copy-button--copied {
+  background-color: #3a3054;
+}
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
