@@ -270,6 +270,7 @@ img {
   letter-spacing: 0.15px;
 }
 
+
 /* INDEX-URL-SHORTENER-FEATURES-WRAPPER */
 .index-url-shortener-features-wrapper {
   display: flex;
@@ -291,6 +292,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  margin-bottom: 24px;
 }
 
 .url-shortener__input-wrapper {
@@ -335,6 +337,47 @@ img {
   letter-spacing: 0.11px;
 }
 
+
+/* RESULTS */
+.url-shortener__results {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.url-shortener__result {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #fff;
+  color: var(--text-color-dark);
+  border-radius: 5px;
+}
+
+.url-shortener__result:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.url-shortener__original-link {
+  width: 100%;
+  color: var(--text-color-dark);
+  font-size: 20px;
+  margin-right: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.url-shortener__short-link {
+  color: var(--accent-color);
+  text-align: right;
+  margin-right: 24px;
+  letter-spacing: 0.15px;
+  text-decoration: none;
+}
+
+.url-shortener__copy-button {
+  min-width: 103px;
+}
 
 
 @media
