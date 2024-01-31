@@ -70,6 +70,26 @@ img {
   height: auto;
 }
 
+/* PLACEHOLDER */
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+:-moz-placeholder {
+  color: rgb(52, 49, 61, 0.5);
+  opacity: 1;
+}
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* CONTAINER */
 .container {
@@ -95,6 +115,7 @@ img {
   font-size: 20px;
   line-height: normal;
   border: 0;
+  white-space: nowrap;
 }
 
 .button:hover {
@@ -248,6 +269,72 @@ img {
   line-height: 36px;
   letter-spacing: 0.15px;
 }
+
+/* INDEX-URL-SHORTENER-FEATURES-WRAPPER */
+.index-url-shortener-features-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-bg);
+}
+
+.index-url-shortener-features-wrapper__url-shortener {
+  margin-top: -84px;
+}
+
+/* URL SHORTENER */
+.url-shortener__form {
+  display: flex;
+  background-color: #4b3f6b;
+  padding: 52px 64px;
+  border-radius: 10px;
+  background-image: url("../img/background-form.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.url-shortener__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-grow: 1;
+  margin-right: 24px;
+}
+
+.url-shortener__input {
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+  padding: 14px 32px;
+  border-radius: 10px;
+  border: 3px solid;
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--text-color-dark);
+}
+
+.url-shortener__input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: var(--error-color);
+  color: var(--error-color);
+}
+
+.url-shortener__error-msg {
+  display: none;
+}
+
+.url-shortener__input:not(:focus):not(:placeholder-shown):invalid ~ .url-shortener__error-msg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: italic;
+  color: var(--error-color);
+  letter-spacing: 0.11px;
+}
+
 
 
 @media
