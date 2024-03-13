@@ -183,7 +183,9 @@ select:-webkit-autofill:focus {
 
 .site-header__logo {
   margin-right: 45px;
+  flex-shrink: 0;
 }
+
 
 /* LOGO */
 .logo {
@@ -621,15 +623,4 @@ select:-webkit-autofill:focus {
   width: 24px;
   height: 24px;
   object-fit: contain;
-}
-
-
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) {
-
 }
